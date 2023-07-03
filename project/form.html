@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #e3bf0e;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .logo {
+      height: 100px;
+      width: 100px;
+    }
+    .nav-buttons a {
+      padding: 8px 16px;
+      text-decoration: none;
+      background-color: #79dc09;
+      color: #fff;
+      border-radius: 4px;
+    }
+    .form-container {
+      max-width: 500px;
+      padding: 50px;
+      border: 1px solid #e8f406;
+      border-radius: 30px;
+      background-color: hsl(183, 81%, 63%);
+    }
+    .form-container h1 {
+      margin-top: 0;
+      font-family: cursive;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-style: italic;
+      font-family: cursive;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group input[type="file"] {
+      margin-top: 5px;
+    }
+    .form-group input[type="submit"] {
+      padding: 8px 16px;
+      background-color: #79dc09;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body background="C:\Users\Chhavi Jain\OneDrive\Desktop\VS FILES\externship project\bg1.jpg" background-size="cover">
+  <header class="header">
+    <div class="logo">
+      <img src="C:\Users\Chhavi Jain\OneDrive\Desktop\VS FILES\externship project\Logo.png" width="100px" alt="Company Logo">
+    </div>
+    <nav class="nav-buttons">
+        <a href="index.html">Home</a>
+        <a href="apply_job.html">Apply Job</a>
+      </nav>
+  </header>
+  
+  <div class="form-container">
+    <h1>Fill the Application</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+      <textarea placeholder="Predicted Rating Is" name="prediction"></textarea>
+    </form>
+  </div>
+
+</body>
+</html>
